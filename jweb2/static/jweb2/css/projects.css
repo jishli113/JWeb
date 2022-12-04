@@ -1,0 +1,86 @@
+
+        .card-wrap{
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        .card{
+            padding: 2rem;
+            border:none;
+            box-shadow: 0 2px 5px 0 rgb(0,0,.2);
+            border-radius: .25rem;
+        }
+        .card-image{
+            max-width: 50%;
+            max-height: 70%;
+            float: right;    
+            /* margin: 0 0 0 15px; */
+        }
+        .card-image > img{
+            max-height: 100%;
+            max-width: 100%;
+            margin-left: 2%;
+            display: inline-block;
+        }
+        .card-content{
+            text-align: center;
+            display:block;
+            margin-top: 4%;
+        }
+
+        .intro-wrapper{
+            text-align:left;
+            max-width: 50%;
+        }
+        .card-image{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card-bottom{
+            margin-top: 6%;
+        }
+        .icon{
+              border:2px solid #fff;
+              -moz-border-radius:25px;
+              -webkit-border-radius:25px;
+              border-radius:25px;
+              cursor: pointer;
+              height: 50px;
+              width: 50px;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            overflow: auto;
+        }
+        .body{
+            background-color: #0B172A;
+        }
+        @font-face{
+            font-family: titleFont;
+            src: url("{% static 'jweb2/fonts/sans-serif/SansSerifFLF.otf' %}");
+        }
+        @font-face{
+            font-family: cardtext;
+            src: url("{% static 'jweb2/fonts/sans-serif/SansSerifFLF.otf' %}");
+        }
+        .body{
+            background-color: #0B172A;
+        }
+        .intro-wrapper{
+            text-align:left;
+            max-width: 50%;
+        }
+        .class-header{
+            font:cardtext;
+        }
+        .page-header{
+            color: white;
+            font: titleFont;
+        }
+        .card-wrap{
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            border:5px solid #BC4123;
+            border-radius: 10px;
+        }

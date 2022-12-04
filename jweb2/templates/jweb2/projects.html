@@ -1,0 +1,44 @@
+{% include 'main.html' %}
+{% load static %}
+<head>
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel="stylesheet" href="{% static 'jweb2/css/projects.css' %}">
+    <style>
+        .card{
+            background-color: #463940;
+        }
+        .description{
+            color: white;
+        }
+        .card-header{
+            color: white;
+        }
+    </style>
+</head>
+<body class="body">
+<h1 class="page-header"style="text-align: center">Projects</h1>
+    <h1>{{projects}}</h1>
+    {% for project in context %}
+    {% with 'jweb2/images/'|add:project.image as project_photo %}
+        <div class="card-wrap">
+            <div class="card">
+                <h2 class="card-header">{{project.title}}</h2>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="{% static project_photo %}">
+                        </div>
+                    <div class="intro-wrapper">
+                        <p1 class="description" style="text-align: left;">{{project.intro}}</p1>
+                     </div>
+                     <div class="card-bottom">
+                        <h2 style="font-size: medium; color: white;">Project Date: {{project.date}}</h2>
+                        <button class="btn" onclick="window.open('{{project.link}}')"><i class="fa-brands fa-github"></i> GitHub</button>
+                     </div>
+                    </div>
+            </div>
+        </div>
+    {% endwith %}
+    {% endfor %}
+    
+</body>
+

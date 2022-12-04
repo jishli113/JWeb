@@ -1,0 +1,48 @@
+@font-face{
+    font-family: titleFont;
+    src: url("{% static 'jweb2/fonts/sans-serif/SansSerifFLF.otf' %}");
+}
+.image-wrapper > img{
+    width: 300px;
+    height: 400px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.selfie{
+    height:100%;
+    width:100%;
+}
+.introduction{
+    color: white;
+    font: titleFont;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.basic-info{
+    margin-top: -5%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+.page-header{
+    margin-top: 4%;
+    text-align: center;
+    color: white;
+    font: titleFont;
+    text-decoration: none;
+}
+.body{
+    background-color: #0B172A;
+    text-decoration: none;
+}
+.name{
+    color: white;
+    text-align: center;
+    margin-top: -5%;
+}
+.content-wrapper{
+    margin-left: 25%;
+    margin-right: 25%;
+}
