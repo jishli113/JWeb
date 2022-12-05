@@ -1,0 +1,2 @@
+jweb2/ filter=lfs diff=lfs merge=lfs -text
+jweb2/jweb2 filter=lfs diff=lfs merge=lfs -text
